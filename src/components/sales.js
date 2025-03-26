@@ -8,6 +8,7 @@ import saleImage8 from "../assets/image/perfume-sale8.jpg"
 import saleImage9 from "../assets/image/perfume-sale9.jpg"
 import saleImage10 from "../assets/image/perfume-sale10.jpg"
 import saleImage11 from "../assets/image/perfume-sale11.jpg"
+import { useEffect } from "react"
 
 function Card(imageInput) {
     console.log(imageInput.value)
@@ -31,7 +32,7 @@ function Card(imageInput) {
 }
 
 function Sales() {
-    window.onload = function () {
+    useEffect(()=> {
         let fadeSlides = document.querySelectorAll('.fade')
         fadeSlides.forEach((box, index) => {
             setTimeout(() => {
@@ -39,7 +40,7 @@ function Sales() {
                 box.style.transition = "opacity 0.5s"
             }, 500 * (index + 1));
         })
-    }
+    },[])
 
 
     return (
