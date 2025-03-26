@@ -11,7 +11,6 @@ import saleImage11 from "../assets/image/perfume-sale11.jpg"
 import { useEffect } from "react"
 
 function Card(imageInput) {
-    console.log(imageInput.value)
     return (
         <div className="fade" style={{ opacity: "0" }}>
             <div className="w-28 md:w-52 p-1 flex flex-col gap-1 cursor-pointer hover:bg-pink-100" style={{ boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px" }}>
